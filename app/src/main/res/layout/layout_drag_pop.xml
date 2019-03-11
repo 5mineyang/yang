@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMySettingsUserPopAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.mineyang.yang.view.relativelayout.MyRelativeLayout
+        android:id="@+id/rlMySettingsUserPop"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlMySettingsUserPopTopAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_bg_white_top_radius15"
+            android:paddingBottom="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlMySettingsUserPopTop"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="请选择"
+                    android:textColor="@color/color_333333"
+                    android:textSize="17sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivMySettingsUserPopClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="9dp"
+                    android:src="@drawable/close"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMySettingsUserPopTopBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlMySettingsUserPopTop"
+                android:paddingStart="14dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tvMySettingsUserPopOneDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="●"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMySettingsUserPopOneTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toEndOf="@+id/tvMySettingsUserPopOneDot"
+                    android:text="安徽省"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMySettingsUserPopTwoDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMySettingsUserPopOneDot"
+                    android:layout_marginTop="28dp"
+                    android:text="●"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMySettingsUserPopTwoTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMySettingsUserPopOneDot"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_toEndOf="@+id/tvMySettingsUserPopTwoDot"
+                    android:text="请选择城市"
+                    android:textColor="@color/color_333333"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMySettingsUserPopThreeDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMySettingsUserPopTwoDot"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="28dp"
+                    android:text="◯"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMySettingsUserPopThreeTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvMySettingsUserPopTwoDot"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_toEndOf="@+id/tvMySettingsUserPopThreeDot"
+                    android:text="请选择城市"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvMySettingsUserPopThreeDot"
+                    android:layout_below="@+id/tvMySettingsUserPopOneDot"
+                    android:layout_marginBottom="-32dp"
+                    android:layout_marginTop="-4dp"
+                    >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/colorPrimary"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="●"
+                        android:textSize="14sp"
+                        android:visibility="invisible"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rlMySettingsUserPopTopAll"
+            android:layout_marginTop="-1dp"
+            android:background="#dddddd"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlMySettingsUserPopTopAll"
+            android:background="@color/color_f8f8f8"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvMySettingsUserPopTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="11dp"
+                android:text="选择省份/地区"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvMySettingsUserPop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbYingyingRecommend"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </com.mineyang.yang.view.relativelayout.MyRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="dialog_common" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <!--<item name="android:background">@android:color/transparent</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <!--<item name="android:backgroundDimAmount">0.5</item>&lt;!&ndash; 遮罩层 &ndash;&gt;-->
+    </style>
+
+    <!-- 底部dialog的动画 -->
+    <style name="bottomDialog_animStyle">
+        <!-- windowEnterAnimation 进入的动画代码里面 -->
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+
+    <!-- 下载progress默认style -->
+    <style name="WaveProgressViewDefault">
+        <item name="radius">55dp</item>
+        <item name="progress_text_color">#fff</item>
+        <item name="progress_text_size">15sp</item>
+        <item name="progress_color">@color/colorPrimary</item>
+        <item name="radius_color">#FF734B58</item>
+        <item name="progress">0</item>
+        <item name="maxProgress">100</item>
+    </style>
+</resources>

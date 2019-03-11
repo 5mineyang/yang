@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlSelectDialogRvMenuG"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:layout_margin="10dp"
+    android:background="@color/color_f8f6f6"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvSelectDialogRvMenuG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/view_item_background"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="item"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/ivSelectDialogRvMenuG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/dialogselect"
+        android:visibility="gone"
+        />
+</RelativeLayout>

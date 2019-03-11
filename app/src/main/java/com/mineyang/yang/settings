@@ -1,0 +1,39 @@
+头部:
+/**
+ *  Description :
+
+ *  Author:yang
+
+ *  Email:1318392199@qq.com
+
+ *  Date: ${DATE}
+ */
+
+请求：
+com.mineyang.yang.utils.ApiUtils.getApi()
+           .$method$
+           .observeOn(AndroidSchedulers.mainThread())
+           .subscribeOn(Schedulers.io())
+           .subscribe({
+
+           },{
+
+           })
+
+SwipeMenuLayout使用方法：
+aty里：
+rv.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_UP) {
+                //SwipeMenuLayout设置关闭左滑view
+                SwipeMenuLayout.viewCache?.smoothClose()
+            }
+            false
+        }
+
+xml里（注：布局里第一个大布局是显示的，往后面加的不显示）：
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true"
+
+<!-- RecyclerView里禁用多点触控 -->
+android:splitMotionEvents="false"
